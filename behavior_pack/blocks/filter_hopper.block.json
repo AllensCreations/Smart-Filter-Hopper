@@ -1,0 +1,90 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "custom:filter_hopper",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "custom:facing_direction": [
+          "down",
+          "north",
+          "south",
+          "west",
+          "east"
+        ]
+      }
+    },
+    "components": {
+      "minecraft:geometry": "geometry.filter_hopper_down",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "filter_hopper_outside",
+          "render_method": "opaque"
+        },
+        "top": {
+          "texture": "filter_hopper_top",
+          "render_method": "alpha_test"
+        },
+        "inside": {
+          "texture": "filter_hopper_inside",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 4.8
+      },
+      "minecraft:loot": "loot_tables/blocks/filter_hopper.json",
+      "minecraft:selection_box": true,
+      "minecraft:collision_box": true
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('custom:facing_direction') == 'down'",
+        "components": {
+          "minecraft:geometry": "geometry.filter_hopper_down"
+        }
+      },
+      {
+        "condition": "q.block_state('custom:facing_direction') == 'north'",
+        "components": {
+          "minecraft:geometry": "geometry.filter_hopper_side",
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('custom:facing_direction') == 'south'",
+        "components": {
+          "minecraft:geometry": "geometry.filter_hopper_side",
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('custom:facing_direction') == 'west'",
+        "components": {
+          "minecraft:geometry": "geometry.filter_hopper_side",
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('custom:facing_direction') == 'east'",
+        "components": {
+          "minecraft:geometry": "geometry.filter_hopper_side",
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      }
+    ]
+  }
+}

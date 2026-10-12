@@ -1,0 +1,17 @@
+{
+  "resource_pack_name": "smart_filter_hopper",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "filter_hopper_outside": {
+      "textures": "textures/blocks/filter_hopper_outside"
+    },
+    "filter_hopper_inside": {
+      "textures": "textures/blocks/filter_hopper_inside"
+    },
+    "filter_hopper_top": {
+      "textures": "textures/blocks/filter_hopper_top"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": [1, 1, 0],
+  "custom:filter_hopper": {
+    "sound": "metal",
+    "textures": {
+      "up": "filter_hopper_top",
+      "down": "filter_hopper_outside",
+      "side": "filter_hopper_outside"
+    }
+  }
+}

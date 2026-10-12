@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Smart Filter Hopper RP",
+    "description": "Custom textures and models for the Smart Filter Hopper Add-on by AllensCreations",
+    "uuid": "fda6a8ee-4e18-4c66-94ee-4e92b3857aa9",
+    "version": [1, 5, 0],
+    "min_engine_version": [1, 20, 80]
+  },
+  "modules": [
+    {
+      "description": "Smart Filter Hopper Resources",
+      "type": "resources",
+      "uuid": "0fe0a563-8f88-40e4-a54b-b01923973687",
+      "version": [1, 5, 0]
+    }
+  ]
+}

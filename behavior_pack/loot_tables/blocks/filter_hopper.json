@@ -1,0 +1,14 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "custom:filter_hopper",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

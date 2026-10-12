@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "custom:filter_hopper_from_dust"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " H ",
+      " R "
+    ],
+    "key": {
+      "H": {
+        "item": "minecraft:hopper"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "custom:filter_hopper",
+      "count": 1
+    }
+  }
+}
